@@ -1,31 +1,99 @@
 <!-- #1: Puedo ver un elemento main con un respectivo id="main-doc", que contiene el contenido principal de la página (documentación técnica). -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Documentación Técnica</title>
+    </head>
+    <body>
+        <main id="main-doc">
+            <!-- #2: Dentro del elemento #main-doc puedo ver varios elementos section, cada uno con una clase main-section. Debería haber un mínimo de 5. -->
+            <!-- #3: El primer elemento dentro de cada sección .main-section debería ser un elemento header que contenga texto describiendo el tema de esa sección. -->
+            <!-- #4: Cada elemento section con la clase main-section también debería tener un id que corresponda con el texto de cada header contenido en él. Cualquier espacio debería ser reemplazado por guiones bajos (p.e. La sección section que contiene el título "JavaScript and Java" debería tener un respectivo id="JavaScript_and_Java"). -->
+            <!-- #5: Los elementos .main-section deberían contener al menos 10 elementos p en total (no cada uno). -->
 
-<!-- #2: Dentro del elemento #main-doc puedo ver varios elementos section, cada uno con una clase main-section. Debería haber un mínimo de 5. -->
+            <!-- #6: Los elementos .main-secton deberían contener al menos 5 elementos code en total (no cada uno). -->
 
-<!-- #3: El primer elemento dentro de cada sección .main-section debería ser un elemento header que contenga texto describiendo el tema de esa sección. -->
+            <!-- #7: Los elementos .main-section deberían contener al menos 5 elementos li en total (no cada uno). -->
+            <section id="item1" class="main-section">
+                <header>item1</header>
+                <p>
+                <code></code>
+                <li></li>
+                </p>
+                <p>
+                <code></code>
+                <li></li>
+                </p>
+            </section>
+            <section id="item2" class="main-section">
+                <header>item2</header>
+                <p>
+                <code></code>
+                <li></li>
+                </p>
+                <p>
+                <code></code>
+                <li></li>
+                </p>
+            </section>
+            <section id="item3" class="main-section">
+                <header>item3</header>
+                <p>
+                <code></code>
+                <li></li>
+                </p>
+                <p>
+                <code></code>
+                <li></li>
+                </p>
+            </section>
+            <section id="item4" class="main-section">
+                <header>item4</header>
+                <p>
+                <code></code>
+                <li></li>
+                </p>
+                <p>
+                <code></code>
+                <li></li>
+                </p>
+            </section>
+            <section id="item5" class="main-section">
+                <header>item5</header>
+                <p>
+                <code></code>
+                <li></li>
+                </p>
+                <p>
+                <code></code>
+                <li></li>
+                </p>
+            </section>
+        </main>
+        <!-- #8: Puedo ver un elemento nav con un respectivo id="navbar". -->
 
-<!-- #4: Cada elemento section con la clase main-section también debería tener un id que corresponda con el texto de cada header contenido en él. Cualquier espacio debería ser reemplazado por guiones bajos (p.e. La sección section que contiene el título "JavaScript and Java" debería tener un respectivo id="JavaScript_and_Java"). -->
+        <!-- #9: El elemento de barra de navegación debe contener un elemento header que contenga texto describiendo el tema de la documentación técnica. -->
 
-<!-- #5: Los elementos .main-section deberían contener al menos 10 elementos p en total (no cada uno). -->
+        <!-- #10: Adicionalmente, la barra de navegación debería contener enlaces (a) con la clase nav-link. Debería haber uno para cada elemento con la clase main-section. -->
 
-<!-- #6: Los elementos .main-secton deberían contener al menos 5 elementos code en total (no cada uno). -->
+        <!-- #11: El elemento header en la barra de navegación debe aparecer antes que cualquier elemento de enlace (a). -->
 
-<!-- #7: Los elementos .main-section deberían contener al menos 5 elementos li en total (no cada uno). -->
+        <!-- #12: Cada elemento con la clase nav-link debería tener un texto que corresponda con el título header dentro de cada sección section (p.e. Si tienes una sección/título "Hola Mundo", tu barra de navegación debería tener un elemento que contenga el texto "Hola Mundo"). -->
 
-<!-- #8: Puedo ver un elemento nav con un respectivo id="navbar". -->
-
-<!-- #9: El elemento de barra de navegación debe contener un elemento header que contenga texto describiendo el tema de la documentación técnica. -->
-
-<!-- #10: Adicionalmente, la barra de navegación debería contener enlaces (a) con la clase nav-link. Debería haber uno para cada elemento con la clase main-section. -->
-
-<!-- #11: El elemento header en la barra de navegación debe aparecer antes que cualquier elemento de enlace (a). -->
-
-<!-- #12: Cada elemento con la clase nav-link debería tener un texto que corresponda con el título header dentro de cada sección section (p.e. Si tienes una sección/título "Hola Mundo", tu barra de navegación debería tener un elemento que contenga el texto "Hola Mundo"). -->
-
-<!-- #13: Cuando hago clic en un elemento de la barra de navegación, la página debe navegar a la sección correspondiente del elemento main-doc (p.e. Si hago clic en un elemento nav-link que contiene el texto "Hola Mundo", la página navegará al elemento section que tiene ese id y contiene el título header correspondiente. -->
-
-<!-- #14: En dispositivos de tamaño normal (portátiles, escritorios), el elemento con id="navbar" debe mostrarse en el lado izquierdo de la pantalla y siempre debe ser visible para el usuario. -->
-
-<!-- #15: Mi página de Documentación Técnica debería usar al menos una media query. -->
-
-<!-- Puedes construir tu proyecto usando esta plantilla CodePen y haciendo clic en Save para crear tu propio pen. O puedes utilizar este enlace CDN para ejecutar las pruebas en cualquier entorno que desees: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.jsi -->
+        <!-- #13: Cuando hago clic en un elemento de la barra de navegación, la página debe navegar a la sección correspondiente del elemento main-doc (p.e. Si hago clic en un elemento nav-link que contiene el texto "Hola Mundo", la página navegará al elemento section que tiene ese id y contiene el título header correspondiente. -->
+        <nav id="navbar">
+            <header>
+                <ul>
+                    <li><a class="nav-link" href="#item1">item1</a></li>
+                    <li><a class="nav-link" href="#item2">item2</a></li>
+                    <li><a class="nav-link" href="#item3">item3</a></li>
+                    <li><a class="nav-link" href="#item4">item4</a></li>
+                    <li><a class="nav-link" href="#item5">item5</a></li>
+                </ul>
+            </header>
+        </nav>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
